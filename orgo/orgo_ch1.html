@@ -14,9 +14,11 @@
 </nav>
 <div class="container">
     <h1>orgo: illustrated</h1>
-    <p>Welcome to the world of organic chemistry! benzene cool</p>
-    <h3>table of contents</h3>
-    <div id="toc">
+    <h3>chapters
+        <a id="hidetoc" data-toggle="collapse" href="#toc" aria-expanded="true"
+           onclick="document.getElementById('hidetoc').innerHTML=(document.getElementById('hidetoc').innerHTML==='(hide)'?'(show)':'(hide)')">
+            (show)</a></h3>
+    <div class="collapse" id="toc">
         <ol style="list-style: none">
             <li><a href="orgo_ch1">Chapter 1: Review of General Chemistry</a></li>
             <li><a href="orgo_ch2">Chapter 2: Organic Structures</a></li>
@@ -42,6 +44,9 @@
             <li><a href="orgo_ch22">Chapter 22: Organometallic Chemistry</a></li>
         </ol>
     </div>
+    <hr/>
+    <h2>Chapter 1: A Review of General Chemistry</h2>
+    <p>yay content</p>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="../js/bootstrap.bundle.js"></script>
